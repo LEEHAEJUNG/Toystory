@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,
+body {
+    width: 1920px;
+    height: 980px;
+    overflow: hidden;
+    position: relative;
+}
+
+#container {
+    height: 100%;
+    overflow: hidden;
+}
+
+#main {
+    width: 7680px; /* 전체가로사이즈 */
+    height: 100%;
+    position: relative;
+    left:0;
+    transition: left 1s;
+}
+#main.sc01{left:0;}
+#main.sc02{left:-1920px;}
+#main.sc03{left:-3840px;}
+/*#main.sc04{left:-5760px;}*/
+/*#main.sc05{left:-7680px;}*/
+
+
+#container #main > section {
+    width: 1920px;
+    height: 980px;
+    position: relative;
+    float: left;
+}
+
+

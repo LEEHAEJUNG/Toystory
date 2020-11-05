@@ -1,0 +1,42 @@
+html,
+body {
+    width: 1920px;
+    height: 980px;
+    overflow: hidden;
+    position: relative;
+    background: url("../images/sub/intro_bg.png")no-repeat;
+}
+
+.intro_2_top {
+    position: absolute;
+    top: 0;
+    animation: top 30s linear infinite;
+}
+
+@keyframes top {
+    to {
+        transform: translateX(-5000px);
+    }
+}
+
+.intro_2_bottom {
+    position: absolute;
+    left: -4000px;
+    bottom: 0;
+    animation: bottom 30s linear infinite;
+}
+
+@keyframes bottom {
+    to {
+        transform: translateX(5000px);
+    }
+}
+
+.title {
+    position: absolute;
+    top: 364px;
+    left: 793px;
+}
+.title > a {
+
+}

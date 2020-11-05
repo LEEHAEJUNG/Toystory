@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <title>Toy Story</title>
+
+    <link rel="stylesheet" href="css/plugin/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/plugin/common.css">
+    <link rel="stylesheet" href="css/plugin/slick.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sub_gallery.css">
+
+    <script src="js/plugin/jquery-1.8.1.min.js"></script>
+    <script src="js/plugin/jquery.easing.1.3.min.js"></script>
+    <script src="js/plugin/prefixfree.min.js"></script>
+    <script src="js/plugin/respond.min.js"></script>
+    <script src="js/plugin/jquery.nicescroll.min.js"></script>
+    <script src="js/plugin/jquery.mousewheel.min.js"></script>
+    <script src="js/plugin/parallax.js"></script>
+    <script src="js/plugin/slick.min.js"></script>
+    <script src="js/plugin/logic.js"></script>
+    <script src="js/main.js"></script>
+    <!--[if It IE 9] <script src="js/respond.min.js"></script> <[endif]-->
+    <link rel="shortcut icon" href="images/common/header/favicon.png" type="image/x-icon">
+<!--    <link rel="favicon" href="images/common/header/favicon.png" type="image/x-icon">-->
+
+
+</head>
+
+<body>
+
+<div id="key" class="on1"></div>
+
+<!--<section id="intro">-->
+<!--    <div class="intro_2_top"><img src="images/sub/intro_film.png" alt="#"></div>-->
+<!--    <div class="intro_2_bottom"><img src="images/sub/intro_film.png" alt="#"></div>-->
+<!--    <div class="title"><img src="images/sub/intro_title.png" alt="#"></div>-->
+<!--</section>-->
+    
+<section id="intro">
+    <div class="intro_2_top"><img src="images/sub/intro_film.png" alt="#"></div>
+    <div class="intro_2_bottom"><img src="images/sub/intro_film.png" alt="#"></div>
+    <div class="title"><a><img src="images/sub/intro_title.gif" alt="#"></a></div>
+</section>
+
+<script>
+    $('.title > a').mouseenter(function(){ // .topmenu 자식 li를 마우스 오버했을때
+        // this = .topmenu의 자식 li중에서 현재 마우스 오버한 대상
+        $('.title').children().children('img').attr('src',$('.title').children().children('img').attr('src').replace('intro_title.gif','intro_title_on.gif'))
+    });
+    $('.title > a').mouseleave(function(){ // .topmenu 자식 li를 마우스 오버했을때
+        // this = .topmenu의 자식 li중에서 현재 마우스 오버한 대상
+        $('.title').children().children('img').attr('src',$('.title').children().children('img').attr('src').replace('intro_title_on.gif','intro_title.gif'))
+    });
+</script>
+    
+    
+<a href="#" class="menu">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</a>
+
+<h1 class="logo"><a href="#section01"><img src=images/common/header/logo.png alt="#"></a></h1>
+
+<ul id="btn_icon">
+    <li class="icon01"><img src="images/common/footer/icon01.png" alt="#"></li>
+    <li class="icon02"><img src="images/common/footer/icon02.png" alt="#"></li>
+    <li class="icon03"><img src="images/common/footer/icon03.png" alt="#"></li>
+    <li class="icon04"><img src="images/common/footer/icon04.png" alt="#"></li>
+</ul>
+
+<div class="bg"></div>
+
+
+<!--메뉴 시작-->
+<header id="header">
+    <ul class="left" id="nav">
+        <li class="home_btn"><a href="#section01"><img src="images/main/home_btn.png" alt="#"></a></li>
+        <li class="story_btn"><img src="images/main/story_btn.png" alt="#"></li>
+        <li class="grallery_btn"><img src="images/main/grallery_btn.png" alt="#"></li>
+        <li class="trailer_btn"><a href="#"><img src="images/main/trailer_btn.png" alt="#"></a></li>
+    </ul>
+
+    <ul class="bottom_1">
+        <li class="disney"><img src="images/main/disney_btn.png" alt="#"><div class="borderFade"></div></li>
+        <li class="fixar"><img src="images/main/fixar_btn.png" alt="#"><div class="borderFade"></div></li>
+        <li class="contact"><img src="images/main/contact_btn.png" alt="#"><div class="borderFade"></div></li>
+    </ul>
+
+    <ul class="bottom_2">
+        <li class="icon01"><img src="images/common/footer/icon01.png" alt="#"></li>
+        <li class="icon02"><img src="images/common/footer/icon02.png" alt="#"></li>
+        <li class="icon03"><img src="images/common/footer/icon03.png" alt="#"></li>
+        <li class="icon04"><img src="images/common/footer/icon04.png" alt="#"></li>
+    </ul>
+</header>
+<!--메뉴 끝-->
+
+
+<main id="container" class="container">
+    <section class="main" id="main">
+        <section id="section01">
+
+            <div class="box"></div>
+
+            <article id="visual" class="clearfix">
+                <div class="title"><img src="images/main/title.png" alt="#"></div>
+                <div class="btn"><a href="#"><img src="images/main/btn_01.png" alt="#"></a></div>
+                <div class="toy"><img src="images/main/toy.png" alt="#"></div>
+                <div class="mouse"><a href="#"><span></span><span></span><span></span></a></div>
+                <div class="scroll"><a href="#"><span></span><span></span><span></span></a></div>
+            </article>
+
+        </section><!-- scene01 end -->
+
+
+        <section id="section02">
+
+            <div class="title2"><img src="images/main/title2.png" alt="#"></div>
+
+            <ul id="cloud">
+                <li class="cloud_01"><img src="images/main/cloud01.png" alt="#"  class="layer" data-depth="0.07"></li>
+                <li class="cloud_02"><img src="images/main/cloud01.png" alt="#" class="layer" data-depth="-0.05"></li>
+                <li class="cloud_03"><img src="images/main/cloud01.png" alt="#" class="layer" data-depth="-0.03"></li>
+                <li class="cloud_04"><img src="images/main/cloud_4_dark.png" alt="#" class="layer" data-depth="0.08"></li>
+                <li class="cloud_05"><img src="images/main/cloud01.png" alt="#"  class="layer" data-depth="0.07"></li>
+                <li class="cloud_06"><img src="images/main/cloud_4_dark.png" alt="#" class="layer" data-depth="0.08"></li>
+            </ul>
+
+            <div class="toy_full clearfix">
+                <div class="woody">
+                    <img class="hover" src="images/main/toy_woody_on.png" alt="#">
+                    <div class="w_btn"></div>
+                </div>
+                <div class="buzz">
+                    <img class="hover" src="images/main/toy_buzz_on.png" alt="#">
+                    <div class="w_btn"></div>
+                </div>
+                <div class="jessie">
+                    <img class="hover" src="images/main/toy_jessie_on.png" alt="#">
+                    <div class="w_btn"></div>
+                </div>
+                <div class="forky">
+                    <img class="hover" src="images/main/toy_forky_on.png" alt="#">
+                    <div class="w_btn"></div>
+                </div>
+
+            </div>
+
+        </section><!-- scene02 end -->
+
+
+        <section id="section03">
+
+            <ul id="cloud2">
+                <li class="cloud_01"><img src="images/main/cloud01.png" alt="#"  class="layer" data-depth="0.07"></li>
+                <li class="cloud_02"><img src="images/main/cloud01.png" alt="#" class="layer" data-depth="-0.05"></li>
+                <li class="cloud_04"><img src="images/main/cloud_3.png" alt="#" class="layer" data-depth="0.08"></li>
+                <li class="cloud_06"><img src="images/main/cloud_3.png" alt="#" class="layer" data-depth="-0.08"></li>
+            </ul>
+
+            <article class="menu_8 clearfix">
+                <div class="menu_1"><a href="#"><img src="images/main/menu_1.png" alt="story"></a></div>
+                <div class="menu_2"><a href="#"><img src="images/main/menu_2.png" alt="trailer"></a></div>
+                <div class="menu_3"><a href="#"><img src="images/main/menu_3.png" alt="gallery"></a></div>
+            </article>
+
+            <div class="toy_3"><img src="images/main/toy_3.png" alt="#"></div>
+
+        </section><!-- scene03 end -->
+
+
+    </section><!-- wrap end -->
+</main><!-- scrollBox end -->
+
+
+
+<!------------------------------------pop start------------------------------------>
+
+
+<section id="pop">
+
+    <ul id="slide">
+        <li class="slide_wrap s1">
+            <img src="images/sub/bg_1.png" alt="#">
+
+            <div class="title"><img src="images/sub/story.png" alt="#"></div>
+            <div class="sub_title"><img src="images/sub/content_1.png" alt="#"></div>
+            <div class="info"><img src="images/sub/content_11.png" alt="#"></div>
+
+            <div class="btn1">
+                <div class="left"><img src="images/sub/contentbtn_1.png" alt="#"></div>
+                <div class="right"><img src="images/sub/dvdbtn.png" alt="#"></div>
+            </div>
+        </li>
+
+        <li class="slide_wrap s2">
+            <img src="images/sub/bg_2.png" alt="#">
+
+            <div class="title"><img src="images/sub/story.png" alt="#"></div>
+            <div class="sub_title"><img src="images/sub/content_2.png" alt="#"></div>
+            <div class="info"><img src="images/sub/content_22.png" alt="#"></div>
+
+            <div class="btn2">
+                <div class="left"><img src="images/sub/contentbtn_2.png" alt="#"></div>
+                <div class="right"><img src="images/sub/dvdbtn.png" alt="#"></div>
+            </div>
+        </li>
+
+        <li class="slide_wrap s3">
+            <img src="images/sub/bg_3.png" alt="#">
+
+            <div class="title"><img src="images/sub/story.png" alt="#"></div>
+            <div class="sub_title"><img src="images/sub/content_3.png" alt="#"></div>
+            <div class="info"><img src="images/sub/content_33.png" alt="#"></div>
+
+            <div class="btn3">
+                <div class="left"><img src="images/sub/contentbtn_3.png" alt="#"></div>
+                <div class="right"><img src="images/sub/dvdbtn.png" alt="#"></div>
+            </div>
+        </li>
+
+        <li class="slide_wrap s4">
+            <img src="images/sub/bg_4.png" alt="#">
+
+            <div class="title"><img src="images/sub/story.png" alt="#"></div>
+            <div class="sub_title"><img src="images/sub/content_4.png" alt="#"></div>
+            <div class="info"><img src="images/sub/content_44.png" alt="#"></div>
+
+            <div class="btn4">
+                <div class="left"><img src="images/sub/contentbtn_4.png" alt="#"></div>
+                <div class="right"><img src="images/sub/dvdbtn.png" alt="#"></div>
+            </div>
+        </li>
+    </ul>
+
+    <h1 class="logo"><img src="images/common/header/logo.png" alt="#"></h1>
+    <div class="close_btn_story"><img src="images/sub/close_yellow_btn.png" alt="#"></div>
+
+    <div class="prev_btn"><img src="images/sub/prev_btn.png" alt="#"></div>
+    <div class="next_btn"><img src="images/sub/next_btn.png" alt="#"></div>
+</section>
+
+
+
+<section id="pop2">
+    <h1 class="logo"><a href="#"><img src="images/common/header/logo.png" alt="#"></a></h1>
+    <div class="close_btn"><a href="#"><img src="images/sub/close_yellow_btn.png" alt="#"></a></div>
+
+    <article id="wrap2">
+        <video id="sc04_video" src="images/videoplayback.mp4" autoplay muted loop></video>
+
+        <div class="player">
+            <div class="official"><img src="images/main/official.png" alt="#"></div>
+
+            <div class="playbtn">
+                <div class="stop"><img src="images/sub/stopbtn.png" alt="#"></div>
+                <div class="play"><img src="images/main/playbtn.png" alt="#"></div>
+            </div>
+
+            <div class="playbar" id="prs">
+            </div>
+
+            <div class="time"><p id="time">00:00</p></div>
+        </div>
+
+    </article>
+</section>
+
+
+<!-------------------------gallery start---------------------->
+
+<section id="pop3">
+
+    <ul id="slide2">
+
+        <li class="slide2_wrap s1">
+            <div class="title"><img src="images/sub/sub_title.png" alt="#"></div>
+
+            <article id="photo" style="display:none;">
+                <div class="photo_1"><img src="images/sub/photo_1.png" alt="#"></div>
+                <div class="photo_2"><img src="images/sub/photo_2.png" alt="#"></div>
+                <div class="photo_5"><img src="images/sub/photo_5.png" alt="#"></div>
+                <div class="photo_3"><img src="images/sub/photo_3.png" alt="#"></div>
+                <div class="photo_4"><img src="images/sub/photo_4.png" alt="#"></div>
+            </article>
+        </li>
+
+
+        <li class="slide2_wrap s2">
+            <article id="photo02" style="display:none;">
+                <div class="photo_6"><img src="images/sub/photo_6.png" alt="#"></div>
+                <div class="photo_7"><img src="images/sub/photo_7.png" alt="#"></div>
+                <div class="photo_8"><img src="images/sub/photo_8.png" alt="#"></div>
+                <div class="photo_9"><img src="images/sub/photo_9.png" alt="#"></div>
+                <div class="photo_10"><img src="images/sub/photo_10.png" alt="#"></div>
+                <div class="photo_11"><img src="images/sub/photo_11.png" alt="#"></div>
+                <div class="photo_12"><img src="images/sub/photo_12.png" alt="#"></div>
+            </article>
+        </li>
+
+    </ul>
+
+    <h1 class="logo"><img src="images/common/header/logo.png" alt="#"></h1>
+    <div class="close_btn"><img src="images/sub/close_yellow_btn.png" alt="#"></div>
+    <div class="bottom"><img src="images/sub/item.png" alt="#">
+        <div class="item_left"><img src="images/sub/item_left.png" alt="#"></div>
+        <div class="item_right"><img src="images/sub/item_right.png" alt="#"></div>
+    </div>
+
+    <main class="coachmark">
+        <div class="close_btn2"><img src="images/sub/close_yellow_btn.png" alt="#"></div>
+    </main>
+   
+</section>
+
+
+
+</body>
+</html>
+ 

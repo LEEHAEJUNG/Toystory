@@ -1,0 +1,362 @@
+html,
+body {
+    width: 1920px;
+    height: 980px;
+    overflow: hidden;
+    position: relative;
+    background: url("../images/sub/bg_1.png")no-repeat;
+}
+
+#pop {
+    width: 100%;
+    height: 100%;
+    position : fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    display: none;
+}
+
+#pop h1 {
+    top: 36px;
+    text-align: left;
+    left: 70px;
+    position: fixed;
+    z-index: 9999;
+}
+
+#pop .close_btn_story {
+    top: 36px;
+    text-align: right;
+    right: 70px;
+    position: fixed;
+    z-index: 9999;
+    cursor: pointer;
+}
+#pop .prev_btn {
+    position :absolute;
+    left: 70px;
+    top: 50%;
+    z-index: 9999;
+}
+#pop .next_btn {
+    position : absolute;
+    right: 70px;
+    top: 50%;
+    z-index: 9999;
+}
+
+
+
+#slide{
+    width: 1920px;
+    height: 980px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+#slide .slick-slide {
+    width: 1920px;
+    height: 980px;
+    position : relative;
+}
+
+
+
+/*slide_wrap_s1 시작*/
+#slide .s1 .title {
+    position : absolute;
+    top: 168px;
+    left: 50%;
+    margin-left: -88.5px;
+    transform: translateY(100px);
+    opacity : 0;
+    transition: all .7s;
+}
+#slide .s1.on .title {
+    opacity : 1;
+    transform: translateY(0);
+}
+
+
+#slide .s1 .sub_title {
+    position : absolute;
+    top: 323px;
+    left: 50%;
+    margin-left: -48px;
+    opacity : 0;
+    transform: translateY(100px);
+    transition: all 1s;
+}
+#slide .s1.on .sub_title {
+    opacity : 1;
+    transform: translateY(0);
+}
+
+
+#slide .s1 .info {
+    position : absolute;
+    top: 387px;
+    left: 716px;
+    transition: all 1s;
+    opacity : 0;
+    /*transform: translateX(-50%);*/
+}
+#slide .s1.on .info {
+    opacity : 1;
+    /*transform: translateY(0);*/
+}
+
+
+#slide .s1 .btn1 {
+    position : absolute;
+    top: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#slide .s1 .btn1 > div {
+    float : left;
+}
+
+#slide .s1 .btn1 .left {
+    margin-right: 56px;
+    transition: all 1s;
+    opacity : 0;
+}
+#slide .s1.on .btn1 .left {
+    opacity: 1;
+}
+#slide .s1 .btn1 .right {
+    transition: all 1s;
+    opacity : 0;
+}
+#slide .s1.on .btn1 .right {
+    opacity: 1;
+}
+/*slide_wrap_s1 끝*/
+
+
+
+/*slide_wrap_s2 시작*/
+#slide .s2 .title {
+    position : absolute;
+    top: 266px;
+    left: 299px;
+    transform: translateY(100px);
+    opacity : 0;
+    transition: all .7s;
+}
+#slide .s2.on .title {
+    opacity : 1;
+    transform: translateY(0);
+}
+
+
+#slide .s2 .sub_title {
+    position : absolute;
+    top: 420px;
+    left: 299px;
+    opacity : 0;
+    transform: translateY(100px);
+    transition: all 1s;
+}
+#slide .s2.on .sub_title {
+    opacity : 1;
+    transform: translateY(0);
+}
+
+
+#slide .s2 .info {
+    position : absolute;
+    top: 484px;
+    left: 299px;
+    transition: all 1s;
+    opacity : 0;
+}
+#slide .s2.on .info {
+    opacity : 1;
+    /*transform: translateY(0);*/
+}
+
+
+#slide .s2 .btn2 {
+    position : absolute;
+    top: 740px;
+    left: 299px;
+    /*transform: translateX(299px);*/
+}
+
+#slide .s2 .btn2 > div {
+    float : left;
+}
+
+#slide .s2 .btn2 .left {
+    margin-right: 56px;
+    transition: all 1s;
+    opacity : 0;
+}
+#slide .s2.on .btn2 .left {
+    opacity: 1;
+}
+#slide .s2 .btn2 .right {
+    transition: all 1s;
+    opacity : 0;
+}
+#slide .s2.on .btn2 .right {
+    opacity: 1;
+}
+/*slide_wrap_s2 끝*/
+
+
+
+/*slide_wrap_s3 시작*/
+#slide .s3 .title {
+    position : absolute;
+    top: 168px;
+    left: 50%;
+    margin-left: -88.5px;
+    transform: translateY(100px);
+    opacity : 0;
+    transition: all .7s;
+}
+#slide .s3.on .title {
+    opacity : 1;
+    transform: translateY(0);
+}
+
+
+#slide .s3 .sub_title {
+    position : absolute;
+    top: 317px;
+    left: 50%;
+    margin-left: -57.5px;
+    opacity : 0;
+    transform: translateY(100px);
+    transition: all 1s;
+}
+#slide .s3.on .sub_title {
+    opacity : 1;
+    transform: translateY(0);
+}
+
+
+#slide .s3 .info {
+    position : absolute;
+    top: 387px;
+    left: 647px;
+    transition: all 1s;
+    opacity : 0;
+    /*transform: translateX(-50%);*/
+}
+#slide .s3.on .info {
+    opacity : 1;
+    /*transform: translateY(0);*/
+}
+
+
+#slide .s3 .btn3 {
+    position : absolute;
+    top: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#slide .s3 .btn3 > div {
+    float : left;
+}
+
+#slide .s3 .btn3 .left {
+    margin-right: 56px;
+    transition: all 1s;
+    opacity : 0;
+}
+#slide .s3.on .btn3 .left {
+    opacity: 1;
+}
+#slide .s3 .btn3 .right {
+    transition: all 1s;
+    opacity : 0;
+}
+#slide .s3.on .btn3 .right {
+    opacity: 1;
+}
+/*slide_wrap_s3 끝*/
+
+
+/*slide_wrap_s4 시작*/
+#slide .s4 .title {
+    position : absolute;
+    top: 266px;
+    left: 463px;
+    transform: translateY(100px);
+    opacity : 0;
+    transition: all .7s;
+}
+#slide .s4.on .title {
+    opacity : 1;
+    transform: translateY(0);
+}
+
+
+#slide .s4 .sub_title {
+    position : absolute;
+    top: 420px;
+    left: 463px;
+    opacity : 0;
+    transform: translateY(100px);
+    transition: all 1s;
+}
+#slide .s4.on .sub_title {
+    opacity : 1;
+    transform: translateY(0);
+}
+
+
+#slide .s4 .info {
+    position : absolute;
+    top: 484px;
+    left: 463px;
+    transition: all 1s;
+    opacity : 0;
+}
+#slide .s4.on .info {
+    opacity : 1;
+    /*transform: translateY(0);*/
+}
+
+
+#slide .s4 .btn4 {
+    position : absolute;
+    top: 740px;
+    left: 463px;
+    /*transform: translateX(299px);*/
+}
+
+#slide .s4 .btn4 > div {
+    float : left;
+}
+
+#slide .s4 .btn4 .left {
+    margin-right: 56px;
+    transition: all 1s;
+    opacity : 0;
+}
+#slide .s4.on .btn4 .left {
+    opacity: 1;
+}
+#slide .s4 .btn4 .right {
+    transition: all 1s;
+    opacity : 0;
+}
+#slide .s4.on .btn4 .right {
+    opacity: 1;
+}
+/*slide_wrap_s4 끝*/
+
+.slick-dots li button{
+    display: none;
+}
